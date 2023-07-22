@@ -1,0 +1,94 @@
+/* 
+yellow #f7f6cf
+pale turquoise #B6D8F2
+Linen Pink #f4cfdf
+Steel Blue #5784ba
+Sky Blue #9ac8eb
+*/
+#navBar {
+    background-color: #b6d8f2;
+}
+
+#nav_logo {
+    height: 120px;
+}
+
+#nav_title {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 50px;
+}
+
+.navSubText {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 20px;
+}
+
+.nav-link {
+  background-color: #f7f6cf;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.nav-link:focus {
+  outline: 0;
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.nav-link:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+    .nav-link {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+/* Custom CSS */
+.carousel-item {
+  height: 600px; /* Set the desired height for carousel items */
+}
+
+/* Make the carousel responsive */
+@media (max-width: 576px) { /* Extra-small devices (phones) */
+  .carousel-item {
+    height: 200px; /* Adjust the height for smaller screens */
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) { /* Small devices (tablets) */
+  .carousel-item {
+    height: 250px; /* Adjust the height for small screens */
+  }
+}
